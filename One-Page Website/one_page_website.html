@@ -3,13 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>World of MMOs</title>
+		<link rel="stylesheet" href="./css/one_page_website.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
 	
 		<!--NAV-->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#pay2play"><li>PAY TO PLAY</li></a>
 					<a href="#buy2play"><li>BUY TO PLAY</li></a>
@@ -22,7 +24,7 @@
 		
 		<!--HOME-->
 		<div id="#home">
-			<div>
+			<div class="home-container">
 				<header>
 					<h1>The MMO Multiverse</h1>
 					<p>A helpful guide built by Joshua Otterman</p>
@@ -34,7 +36,7 @@
 		<!--PAY TO PLAY-->
 		<section>
 			<div id="pay2play">
-				<h1>Pay to Play</h1>
+				<h2>Pay to Play</h2>
 				<div>
 				
 					<!--PHOTO/VIDEO CONTAINER 1A-->
@@ -75,7 +77,7 @@
 		<!--PAY TO PLAY-->
 		<section>
 			<div id="buy2play">
-				<h1>Buy to Play</h1>
+				<h2>Buy to Play</h2>
 				<div>
 				
 					<!--PHOTO/VIDEO CONTAINER 2A-->
@@ -116,7 +118,7 @@
 		<!--FREE TO PLAY-->
 		<section>
 			<div id="free2play">
-				<h1>Free to Play</h1>
+				<h2>Free to Play</h2>
 				<div>
 				
 					<!--PHOTO/VIDEO CONTAINER 3A-->
@@ -157,63 +159,67 @@
 		<!--RECOMMENDATION-->
 		<section>
 			<div id="contact">
-				<div>
-					<h1>Recommendations</h1>
-						<div>
-							<h2><span>Your journey to another world is just a few clicks away!</span>
+				<div class="container">
+					<div class="heading-padding">		
+						<div class="recommendation">
+							<h2>Recommendations</h2>
+							<h3><span>Your journey to another world is just a few clicks away!</span>
 								<br />Find your adventure today!
-							</h2>
+							</h3>
 							<p>
 								Enter your preferences to recieve a MMO recommendation.
-							</p>
-							<div>								
+							</p><br>
+							<div class="form-recommend">								
 								<form action="" method="post">
-									<div>
-										<h4>Pick a payment model:</h4>
-										<input class="recommend" type="radio" id="p2p" name="pay_model" value="Pay_to_Play">
-										<label for="p2p">Pay to Play</label><br>
-										<input class="recommend" type="radio" id="b2p" name="pay_model" value="Buy_to_Play">
-										<label for="b2p">Buy to Play</label><br>
-										<input class="recommend" type="radio" id="f2p" name="pay_model" value="Free_to_Play">
-										<label for="f2p">Free to Play</label><br>
-										<br>
+									<div class="payment">
+										<h4>Payment model:</h4>
+										<div class="payment-container">
+											<input class="recommend" type="radio" id="p2p" name="pay_model" value="Pay_to_Play">
+											<label for="p2p">Pay to Play</label><br>
+											<input class="recommend" type="radio" id="b2p" name="pay_model" value="Buy_to_Play">
+											<label for="b2p">Buy to Play</label><br>
+											<input class="recommend" type="radio" id="f2p" name="pay_model" value="Free_to_Play">
+											<label for="f2p">Free to Play</label>
+										</div>
 									</div>
-									<div>
-										<h4>Pick your prefered gameplay focus:</h4>
-										<input class="recommend" type="radio" id="pve" name="gameplay-focus" value="PvE">
-										<label for="pve">PvE</label><br>
-										<input class="recommend" type="radio" id="pvp" name="gameplay-focus" value="PvP">
-										<label for="pvp">PvP</label><br>
-										<input class="recommend" type="radio" id="crafting" name="gameplay-focus" value="Crafting">
-										<label for="crafting">Crafting</label><br>
-										<input class="recommend" type="radio" id="social" name="gameplay-focus" value="Social">
-										<label for="social">Social</label><br>
-										<input class="recommend" type="radio" id="fashion" name="gameplay-focus" value="Fashion">
-										<label for="fashion">Fashion</label><br>
-										<br>
+									<div class="gameplay">
+										<h4>Gameplay focus:</h4>
+										<div class="gameplay-container">
+											<input class="recommend" type="radio" id="pve" name="gameplay-focus" value="PvE">
+											<label for="pve">PvE</label><br>
+											<input class="recommend" type="radio" id="pvp" name="gameplay-focus" value="PvP">
+											<label for="pvp">PvP</label><br>
+											<input class="recommend" type="radio" id="crafting" name="gameplay-focus" value="Crafting">
+											<label for="crafting">Crafting</label><br>
+											<input class="recommend" type="radio" id="social" name="gameplay-focus" value="Social">
+											<label for="social">Social</label><br>
+											<input class="recommend" type="radio" id="fashion" name="gameplay-focus" value="Fashion">
+											<label for="fashion">Fashion</label>
+										</div>
 									</div>
-									<div>
-										<h4>Pick your prefered setting:</h4>
-										<input class="recommend" type="radio" id="fantasy" name="setting" value="Fantasy">
-										<label for="fantasy">Fantasy</label><br>
-										<input class="recommend" type="radio" id="scifi" name="setting" value="Science_Fiction">
-										<label for="scifi">Science-Fiction</label><br>
-										<input class="recommend" type="radio" id="steampunk" name="setting" value="Steampunk">
-										<label for="steampunk">Steampunk</label><br>
-										<br>
+									<div class="setting">
+										<h4>Type of world:</h4>
+										<div class="setting-container">
+											<input class="recommend" type="radio" id="fantasy" name="setting" value="Fantasy">
+											<label for="fantasy">Fantasy</label><br>
+											<input class="recommend" type="radio" id="scifi" name="setting" value="Science_Fiction">
+											<label for="scifi">Sci-Fi</label><br>
+											<input class="recommend" type="radio" id="steampunk" name="setting" value="Steampunk">
+											<label for="steampunk">Steampunk</label>
+										</div>
 									</div>
-									<div>
+									<div class="email">
 										<h4>Enter your email to recieve additional information about your recommended MMO.</h4>
-										Email Address: <input class="recommend" type="text" name="Email Address"><br>
-										<br>
+										<input class="recommend-email" type="text" value="" placeholder="Email Address">
 									</div>
-									<div>
+									<div class="submit">
 										<input type="submit" value="Submit"><br>
 										<br>
 									</div>	
 								</form>
 							</div>
 						</div>
+					</div>
 				</div>
 			</div>
 		</section>
