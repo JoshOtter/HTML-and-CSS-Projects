@@ -1,0 +1,12 @@
+.navbar {
+    color: rgb(139, 103, 236);
+    background-color: rgb(163, 163, 219);
+    border: 2px solid rgb(40, 14, 109);
+    text-align: center;
+    width: 10%;
+    margin: auto;
+}
+
+.navbar a:hover {
+    color: seagreen;
+}
