@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    text-align: center;
+}
+
+img {
+    opacity: 0.5;
+}
+
+.bottom-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
