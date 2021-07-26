@@ -1,0 +1,14 @@
+table, th, td {
+    border: 2px solid blue;
+    border-collapse: collapse;
+}
+
+tr.toprow {
+    background-color: cadetblue;
+    text-align: left;
+    text-decoration: underline;
+}
+
+th, td {
+    padding: 20px;
+}
