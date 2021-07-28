@@ -16,7 +16,7 @@ h1 {
 /* Heading 1 element hover effect */
 h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
-    transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
+    transform: scale(1.02); /* When the h1 elements are hovered over they increase in size by 1.1 */
     transition: transform 0.7s; /* This causes the transformation to last 1 second */
 }
 
@@ -48,8 +48,8 @@ p:hover {
 
 /* Center class hover effect - This only affects the quote, github and linkedin links, and footer */
 .center:hover {
-    transition: transform 2s; /* This makes the transform effect last 2 seconds */
-    transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
+    transition: transform 0.5s; /* This makes the transform effect last 2 seconds */
+    transform: scale(1.02); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
 }
 
 /* Anchor elements */
