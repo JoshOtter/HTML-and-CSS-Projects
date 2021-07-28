@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Joshua Otterman</title>
+        <link rel="stylesheet" type="text/css" href="css/otterman_portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Josefin+Slab:wght@300;600;700&family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+    
+    <!--Body-->
+    <body class="Background">
+
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Links">Links</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Code">
+                <source src="img/video/video.mp4" type="video/mp4">
+                <!--Display message if video failes to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Joshua Otterman's Portfolio</h1>
+            <strong>
+                <p class="center colorchange">
+                    <q>There is something which unites magic and applied science (technology) while separating them from the "wisdom" of earlier ages. 
+                        <br>For the wise men of old, the cardinal problem of human life was how to conform the soul to objective reality, and the solution was wisdom, 
+                        <br>self-discipline, and virtue. For the modern, the cardinal problem is how to conform reality to the wishes of man, and the solution is a technique.
+                    </q>
+                    <br> -C.S. Lewis
+                    <br>
+                    <br> My name is Joshua Otterman. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="img/Joshsite-orig-cropped.jpg" alt="Workdesk" class="imageshadow">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer with a background in theology. I see technology as a resource that can do an immense amount of good 
+                    <br>for individual people if used with wisdom for our own self-discipline in virtues that guide our lives both offline and online.
+                    <br>
+                    <br>I am a student in <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Game Developer Boot Camp, where I trained in and experienced the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, and C++.
+                    <br>
+                    <br>I received my Master of Divinity degree from <a href="https://www.csl.edu/" target="_blank">Concordia Seminary</a> where I also started my PhD in Theology and Culture with an emphasis on the effects of technology on community.
+                </p>
+            </div>
+        </div>
+
+        <!--Links section-->
+        <div class="Row" id="Links">
+            <!--Left column-->
+            <div class="Column_1 vertical_center">
+                <h1>Links</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here: 
+                    <br>
+                    <br><a href="https://github.com/JoshOtter" target="_blank">GitHub Profile</a>
+                    <br>
+                    <br>You can learn more about my education and emplyment history on my LinkedIn profile here: 
+                    <br>
+                    <br><a href="https://www.linkedin.com/in/joshotterman/" target="_blank">LinkedIn Profile</a>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_3">
+                <a href="https://github.com/JoshOtter" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo" class="github"></a>
+                <a href="https://www.linkedin.com/in/joshotterman/" target="_blank"><img src="img/LI-In-Bug.png" alt="LinkedIn Logo" class="linkedin"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="img/Joshsite-contact.jpg" alt="Contact_Image" class="imageshadow">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data.-->
+                <form action="https://formspree.io/f/myylnglk" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">Joshua Otterman</p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
