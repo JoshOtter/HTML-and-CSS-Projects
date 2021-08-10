@@ -33,41 +33,64 @@ h3 {
 =====================================================*/
 
 .wrap {
-    width:50%;
+    width: 100%;
+    height: 100%; 
+}
+
+div .nav-container {
     overflow: hidden;
-    margin-left: 25%;
-    margin-right: 25%;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 200px;
+    left: 200px;
+    text-align: center;
     height: 60px;
     background-color: rgb(4, 4, 4, 0.2);
     border-radius: 0 0 10px 10px;
     z-index: 1;
 }
 
+@media screen and (max-width: 1185px) {
+    div .nav-container {
+        height: 105px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    div .nav-container {
+        height: 150px;
+    }
+}
+
 .nav {
     font-size: 20px;
+    display: inline-block;
     text-decoration: none;
     background-color: rgb(33, 179, 171);
     border: none;
     color: black;
     opacity: 1;
     font-family: 'Cairo', sans-serif;
-}
-
-.wrap a {
-    position: relative;
-    left: 3%;
-    top: 10px;
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-left: 1.7%;
-    border-radius: 3px;
     
 }
 
-.wrap:hover {
+@media screen and (max-width: 1185px) {
+    .nav {
+        margin-bottom: 10px;
+    }
+}
+
+.nav-container a {
+    position: relative;
+    top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.nav-container:hover {
     background-color: rgb(4, 4, 4, 0.6)
 }
 .nav:hover {
@@ -75,8 +98,22 @@ h3 {
 }
 
 #home {
-    margin-top: 75px;
-    scroll-margin-top: 100px;
+    margin-top: 70px;
+    scroll-margin-top: 75px
+}
+
+@media screen and (max-width: 1185px) {
+    #home {
+        margin-top: 115px;
+        scroll-margin-top: 115px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    #home {
+        margin-top: 155px;
+        scroll-margin-top: 155px;
+    }
 }
 
 /*=====================================================
@@ -87,6 +124,18 @@ h3 {
 
 #pay2play, #buy2play, #free2play, #contact {
     scroll-margin-top: 70px;
+}
+
+@media screen and (max-width: 1185px) {
+    #pay2play, #buy2play, #free2play, #contact {
+        scroll-margin-top: 115px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    #pay2play, #buy2play, #free2play, #contact {
+        scroll-margin-top: 160px;
+    }
 }
 
 /*=====================================================
