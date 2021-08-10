@@ -3,6 +3,7 @@
 ==================================================*/
 body {
     font-family: "Lora", serif; /* Uses Lora from Google Fonts that I linked in the html document.*/
+    background-color: rgb(190, 211, 210);
 }
 
 /*=========================================================================
@@ -23,6 +24,243 @@ h3 {
 
 .home-container p {
     font-size: 20px;
+    text-align: center;
+}
+
+/*=====================================================
+    Here I set the styling for the navbar fixed to
+    the top of the page.
+=====================================================*/
+
+.wrap {
+    width:50%;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-right: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: rgb(4, 4, 4, 0.2);
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+}
+
+.nav {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgb(33, 179, 171);
+    border: none;
+    color: black;
+    opacity: 1;
+    font-family: 'Cairo', sans-serif;
+}
+
+.wrap a {
+    position: relative;
+    left: 3%;
+    top: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1.7%;
+    border-radius: 3px;
+    
+}
+
+.wrap:hover {
+    background-color: rgb(4, 4, 4, 0.6)
+}
+.nav:hover {
+    background-color:rgb(23, 213, 213, 1);
+}
+
+#home {
+    margin-top: 75px;
+    scroll-margin-top: 100px;
+}
+
+/*=====================================================
+    Here I set make it so that the top of each anchored
+    element appears just under the navbar instead of
+    behind it.
+=====================================================*/
+
+#pay2play, #buy2play, #free2play, #contact {
+    scroll-margin-top: 70px;
+}
+
+/*=====================================================
+    Here I set the size and placement of the home
+    container and its heading so it does not appear 
+    behind the navbar when scrolled to the top of the page.
+=====================================================*/
+
+.home-container {
+    width: 100%;
+}
+
+.home-container h1 {
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 75px;
+}
+
+/*=====================================================
+    Here I set the rows and columns for each section
+    of images on the page.
+=====================================================*/
+
+.row {
+    background-color:rgb(150, 167, 166);
+    width: 98%;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.column {
+    float: left;
+    width: 33.33%
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.image-window img {
+    width: 250px;
+    height: 150px;
+}
+
+
+/*=================================================================
+    Here I make the styling choices for the Lightbox for each row
+    of images.
+=================================================================*/
+
+
+.modalcolumn {
+    float: left;
+    width: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 620px;
+    height: 349px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+    width: 620px;
+    height: 349px;
+    margin: auto;
+}
+
+.mySlides img {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.click {
+    opacity: 0.6;
+    width: 150px;
+    height: 100px;
+}
+
+img.click:hover {
+    cursor: pointer;
+}
+
+.active, .click:hover {
+    opacity 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 /*=================================================================
@@ -31,12 +269,12 @@ h3 {
 =================================================================*/
 
 .container {
-    background-color: lightgray;
-    border: 2px solid grey;
+    background-color: rgb(150, 167, 166);
     border-radius: 30px;
     margin: auto;
     width: 75%;
     text-align: center;
+    margin-top: 20px;
 }
 
 /*=================================================================
