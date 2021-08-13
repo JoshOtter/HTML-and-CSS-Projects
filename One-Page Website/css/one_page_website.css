@@ -1,6 +1,10 @@
 /*==================================================
     Author: Joshua Otterman
 ==================================================*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Lora", serif; /* Uses Lora from Google Fonts that I linked in the html document.*/
     background-color: rgb(190, 211, 210);
