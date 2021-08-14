@@ -17,9 +17,10 @@
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#Links">Links</a>
-            <a href="#Contact">Contact</a>
+            <a id="popupButton" onclick="openForm()" ondblclick="closeForm()">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -40,24 +41,79 @@
             <h1 class="white-text">Joshua Otterman's Portfolio</h1>
             <strong>
                 <p class="center colorchange">
-                    <q>There is something which unites magic and applied science (technology) while separating them from the "wisdom" of earlier ages. 
-                        <br>For the wise men of old, the cardinal problem of human life was how to conform the soul to objective reality, and the solution was wisdom, 
-                        <br>self-discipline, and virtue. For the modern, the cardinal problem is how to conform reality to the wishes of man, and the solution is a technique.
+                    <q>There is something which unites magic and applied science (technology) while separating them 
+                        <br>from the "wisdom" of earlier ages. For the wise men of old, the cardinal problem of human life 
+                        <br>was how to conform the soul to objective reality, and the solution was wisdom, 
+                        <br>self-discipline, and virtue. For the modern, the cardinal problem is how to conform reality 
+                        <br>to the wishes of man, and the solution is a technique.
                     </q>
                     <br> -C.S. Lewis
                     <br>
-                    <br> My name is Joshua Otterman. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br> My name is Joshua Otterman. 
+                    <br>Welcome to my portfolio website. On it, I will tell you about my background and experience.
                     <br>
                     <br> Thank you for stopping by and enjoy!
                 </p>
             </strong>
         </div>
 
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="img/Otterman-Profile-Pic.jpg" alt="Picture of myself">
+                        <div class="text">I'm excited to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="img/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
+                        <div class="text">I'm a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="img/cs_logo.png" alt="C# logo">
+                        <div class="text">the popular programming language C#,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="img/cpp_logo.png" alt="C++ logo">
+                        <div class="text">the popular programming language C++,</div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="img/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="img/Otterman_Contact.jpg" alt="Contact me">
+                        <div class="text"><a class="white-text slideshow-link" onclick="openForm()" href="#Contact">Contact me now!</a></div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
             <div class="Column_2">
-                <img src="img/Joshsite-orig-cropped.jpg" alt="Workdesk" class="imageshadow">
+                <img src="img/Joshsite-orig-cropped.jpg" alt="Workdesk" class="imageshadow image-adjust">
             </div>
             <!--Right column-->
             <div class="Column_1">
@@ -69,6 +125,8 @@
                     <br>I am a student in <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Game Developer Boot Camp, where I trained in and experienced the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, and C++.
                     <br>
                     <br>I received my Master of Divinity degree from <a href="https://www.csl.edu/" target="_blank">Concordia Seminary</a> where I also started my PhD in Theology and Culture with an emphasis on the effects of technology on community.
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()">Contact</a> me below!
                 </p>
             </div>
         </div>
@@ -90,29 +148,28 @@
             </div>
             <!--Right column-->
             <div class="Column_3">
-                <a href="https://github.com/JoshOtter" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo" class="github"></a>
-                <a href="https://www.linkedin.com/in/joshotterman/" target="_blank"><img src="img/LI-In-Bug.png" alt="LinkedIn Logo" class="linkedin"></a>
+                <a href="https://github.com/JoshOtter" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo" class="github image-adjust"></a>
+                <a href="https://www.linkedin.com/in/joshotterman/" target="_blank"><img src="img/LI-In-Bug.png" alt="LinkedIn Logo" class="linkedin image-adjust"></a>
             </div>
         </div>
 
-        <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="img/Joshsite-contact.jpg" alt="Contact_Image" class="imageshadow">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data.-->
-                <form action="https://formspree.io/f/myylnglk" method="POST">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+        <!--Contact form-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/myylnglk" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here" name="message">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
@@ -120,9 +177,10 @@
         <!--Footer section-->
         <footer>
             <p>
-                <p class="center">Joshua Otterman</p>
+                <p class="center">Joshua Otterman, 2021, <a href="https://github.com/JoshOtter" target="_blank">GitHub Profile</a>, <a href="https://www.linkedin.com/in/joshotterman/" target="_blank">LinkedIn Profile</a></p>
                 <br>
             </p>
         </footer>
+        <script src="js/otterman_portfolio.js"></script>
     </body>
 </html>
